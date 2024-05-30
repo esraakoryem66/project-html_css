@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact Me</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                margin: 0;
+                padding: 20px;
+            }
+            form {
+                background-color: rgb(12, 106, 109);
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                margin: auto;
+            }
+            table {
+                width: 100%;
+            }
+            caption {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            td {
+                padding: 10px 0;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"], textarea, select {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            textarea {
+                height: 100px;
+            }
+            .buttons {
+                text-align: center;
+            }
+            .buttons input {
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                border-radius: 4px;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+            .buttons input[type="reset"] {
+                background-color: #f44336;
+            }
+
+            .title {
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+            font-weight: bold;
+            }
+            .image-container {
+                text-align: center;
+                display: inline-block;
+                margin: 10px;
+            }
+            .image-container img {
+                width: 100px; /* Adjust the size as needed */
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <form action="thank.html" method="get">
+            <table>
+                <caption>Contact Me</caption>
+                <tr>
+                    <td >
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Your opinion on the website:</b></label>
+                        <input type="radio" id="verygood" name="opinion" value="Very Good">
+                        <label for="verygood">Very Good</label><br>
+                        <input type="radio" id="good" name="opinion" value="Good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="fair" name="opinion" value="Fair">
+                        <label for="fair">Fair</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Gender:</b></label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="maritalstatus"><b>Marital status:</b></label>
+                        <select id="maritalstatus" name="maritalstatus">
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="other" selected>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="source"><b>You know about my website from:</b></label>
+                        <select id="source" name="source[]" multiple>
+                            <option value="internet">Internet</option>
+                            <option value="friend">Friend</option>
+                            <option value="searchengine">Search Engine</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail"><b>Mail:</b></label>
+                        <input type="text" id="mail" name="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="subject"><b>Subject:</b></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message"><b>Message:</b></label>
+                        <textarea id="message" name="message" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    <hr>
+    &nbsp;
+    &nbsp;
+    <!-- <titl style="text-align: center; padding: 15px; margin: 10px;"><b> My pages online</b> </titl> -->
+        <center><div style="display: inline-block;" class="image-container">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/th (3).jpg" class="facebook"/>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://www.linkedin.com/in/esraa-adel-20942a216/" target="_blank">
+                <img src="./images/th (4).jpg" class="linkedin"/>
+            </a>
+        </div></center>
+</html>
